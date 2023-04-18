@@ -14,6 +14,18 @@
 		27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4BB29EF2B180059B974 /* AirQualityTests.swift */; };
 		27FFC4C629EF2B180059B974 /* AirQualityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4C529EF2B180059B974 /* AirQualityUITests.swift */; };
 		27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4C729EF2B180059B974 /* AirQualityUITestsLaunchTests.swift */; };
+		27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4D929EF2DEF0059B974 /* HomeView.swift */; };
+		27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4D929EF2DEF0059B974 /* HomeView.swift */; };
+		27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4D929EF2DEF0059B974 /* HomeView.swift */; };
+		27FFC4DE29EF2E010059B974 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4DD29EF2E010059B974 /* ChartView.swift */; };
+		27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4DD29EF2E010059B974 /* ChartView.swift */; };
+		27FFC4E029EF2E010059B974 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4DD29EF2E010059B974 /* ChartView.swift */; };
+		27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E129EF2E100059B974 /* SettingsView.swift */; };
+		27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E129EF2E100059B974 /* SettingsView.swift */; };
+		27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E129EF2E100059B974 /* SettingsView.swift */; };
+		27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E529EF2EC90059B974 /* TabBar.swift */; };
+		27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E529EF2EC90059B974 /* TabBar.swift */; };
+		27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4E529EF2EC90059B974 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,11 @@
 		27FFC4C129EF2B180059B974 /* AirQualityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirQualityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FFC4C529EF2B180059B974 /* AirQualityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityUITests.swift; sourceTree = "<group>"; };
 		27FFC4C729EF2B180059B974 /* AirQualityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27FFC4D929EF2DEF0059B974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27FFC4DD29EF2E010059B974 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		27FFC4E129EF2E100059B974 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		27FFC4E529EF2EC90059B974 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		27FFC4E929EF31EF0059B974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +111,11 @@
 		27FFC4A929EF2B180059B974 /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
+				27FFC4E929EF31EF0059B974 /* Info.plist */,
 				27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */,
-				27FFC4AC29EF2B180059B974 /* ContentView.swift */,
+				27FFC4D629EF2D720059B974 /* ViewModels */,
+				27FFC4D529EF2D6C0059B974 /* Models */,
+				27FFC4D429EF2D620059B974 /* Views */,
 				27FFC4AE29EF2B180059B974 /* Assets.xcassets */,
 				27FFC4B029EF2B180059B974 /* Preview Content */,
 			);
@@ -125,6 +145,48 @@
 				27FFC4C729EF2B180059B974 /* AirQualityUITestsLaunchTests.swift */,
 			);
 			path = AirQualityUITests;
+			sourceTree = "<group>";
+		};
+		27FFC4D429EF2D620059B974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27FFC4D829EF2DB50059B974 /* Components */,
+				27FFC4D729EF2D820059B974 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27FFC4D529EF2D6C0059B974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27FFC4D629EF2D720059B974 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		27FFC4D729EF2D820059B974 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27FFC4AC29EF2B180059B974 /* ContentView.swift */,
+				27FFC4E529EF2EC90059B974 /* TabBar.swift */,
+				27FFC4D929EF2DEF0059B974 /* HomeView.swift */,
+				27FFC4DD29EF2E010059B974 /* ChartView.swift */,
+				27FFC4E129EF2E100059B974 /* SettingsView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		27FFC4D829EF2DB50059B974 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
+				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
+				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
+				27FFC4DE29EF2E010059B974 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */,
+				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
+				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
+				27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */,
+				27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */,
+				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27FFC4C629EF2B180059B974 /* AirQualityUITests.swift in Sources */,
+				27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */,
+				27FFC4E029EF2E010059B974 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +493,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AirQuality/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AirQuality/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -447,7 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AirQuality/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AirQuality/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
