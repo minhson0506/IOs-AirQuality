@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D449DF29F1EDF7000BAB6D /* AirQualityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D449DE29F1EDF7000BAB6D /* AirQualityModel.swift */; };
 		27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */; };
 		27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AC29EF2B180059B974 /* ContentView.swift */; };
 		27FFC4AF29EF2B180059B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FFC4AE29EF2B180059B974 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27D449DE29F1EDF7000BAB6D /* AirQualityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityModel.swift; sourceTree = "<group>"; };
 		27FFC4A729EF2B180059B974 /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityApp.swift; sourceTree = "<group>"; };
 		27FFC4AC29EF2B180059B974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		27FFC4D529EF2D6C0059B974 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27D449DE29F1EDF7000BAB6D /* AirQualityModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
+				27D449DF29F1EDF7000BAB6D /* AirQualityModel.swift in Sources */,
 				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
