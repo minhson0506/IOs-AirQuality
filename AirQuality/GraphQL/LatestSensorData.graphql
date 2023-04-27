@@ -1,0 +1,17 @@
+query LatestSensorData($deviceName: String!) {
+  latestSensorData(deviceName: $deviceName) {
+    alt
+    co2
+    hum
+    id
+    lux
+    noise
+    pm1
+    pm10
+    pm2_5
+    pm4
+    pres
+    temp
+    time
+  }
+}

@@ -1,0 +1,6 @@
+query AllDevices {
+  allDevices {
+    deviceId
+    deviceName
+  }
+}
