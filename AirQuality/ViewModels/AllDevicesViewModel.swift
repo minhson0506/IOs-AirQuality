@@ -8,7 +8,7 @@
 import Foundation
 
 class AllDevicesViewModel: ObservableObject {
-    
+    @Published var allDevices: [AllDevices.Device] = []
     
     init(){
         fetchAllDevices()
@@ -18,11 +18,19 @@ class AllDevicesViewModel: ObservableObject {
         Network.shared.apollo.fetch(query: AllDevicesQuery()) { result in
             switch result {
             case .success(let graphQLResult):
-                print("DEBUG - AllDevice fetch - Success! Result : \(graphQLResult)")
+                
+                if let allDevices = graphQLResult.data?.allDevices{
+                    print("DEBUG - AllDevice fetch - Success! Result : \(graphQLResult)")
+                    self.allDevices = allDevices.compactMap(AllDevices.Device.init)
+                } else if let errors = graphQLResult.errors {
+                    print("DEBUG - AllDevice fetch - GraphQL errors \(errors)")
+                }
+                
             case .failure(let error):
                 print("DEBUG - AllDevice fetch - Failure! Error : \(error)")
             }
         }
     }
+    
 }
 

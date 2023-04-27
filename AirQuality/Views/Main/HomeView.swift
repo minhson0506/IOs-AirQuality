@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var allDevicesVM: AllDevicesViewModel
     var body: some View {
         NavigationView {
-            Text("Home")
-                .navigationTitle("Home")
+            ScrollView {
+                ForEach(allDevicesVM.allDevices.indices, id: \.self){ index in
+                    Text(allDevicesVM.allDevices[index].deviceName)
+                }
+            }
         }
         .navigationViewStyle(.stack)
     }
@@ -20,5 +24,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(AllDevicesViewModel())
     }
 }

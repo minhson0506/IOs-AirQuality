@@ -14,6 +14,7 @@
 		27AE8E2029FA2BEC00EFC676 /* LatestSensorData.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27AE8E1F29FA2BEC00EFC676 /* LatestSensorData.graphql */; };
 		27AE8E2229FA430A00EFC676 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2129FA430A00EFC676 /* Network.swift */; };
 		27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */; };
+		27AE8E2829FA470200EFC676 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2729FA470200EFC676 /* DeviceModel.swift */; };
 		27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */; };
 		27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AC29EF2B180059B974 /* ContentView.swift */; };
 		27FFC4AF29EF2B180059B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FFC4AE29EF2B180059B974 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		27AE8E1F29FA2BEC00EFC676 /* LatestSensorData.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LatestSensorData.graphql; sourceTree = "<group>"; };
 		27AE8E2129FA430A00EFC676 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDevicesViewModel.swift; sourceTree = "<group>"; };
+		27AE8E2729FA470200EFC676 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		27FFC4A729EF2B180059B974 /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityApp.swift; sourceTree = "<group>"; };
 		27FFC4AC29EF2B180059B974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		27AE8E2629FA46D200EFC676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27AE8E2729FA470200EFC676 /* DeviceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		27FFC49E29EF2B180059B974 = {
 			isa = PBXGroup;
 			children = (
@@ -145,9 +155,11 @@
 		27FFC4A929EF2B180059B974 /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
-				27AE8E1529FA288A00EFC676 /* GraphQL */,
+				27AE8E2629FA46D200EFC676 /* Models */,
 				27FFC4E929EF31EF0059B974 /* Info.plist */,
 				27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */,
+				27AE8E1529FA288A00EFC676 /* GraphQL */,
+				27AE8E2329FA440E00EFC676 /* ViewModels */,
 				27FFC4D429EF2D620059B974 /* Views */,
 				27FFC4AE29EF2B180059B974 /* Assets.xcassets */,
 				27FFC4B029EF2B180059B974 /* Preview Content */,
@@ -183,7 +195,6 @@
 		27FFC4D429EF2D620059B974 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27AE8E2329FA440E00EFC676 /* ViewModels */,
 				27FFC4D829EF2DB50059B974 /* Components */,
 				27FFC4D729EF2D820059B974 /* Main */,
 			);
@@ -377,6 +388,7 @@
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
+				27AE8E2829FA470200EFC676 /* DeviceModel.swift in Sources */,
 				27FFC4DE29EF2E010059B974 /* ChartView.swift in Sources */,
 				27AE8E1E29FA2B1800EFC676 /* API.swift in Sources */,
 			);
