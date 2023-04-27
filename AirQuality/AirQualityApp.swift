@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AirQualityApp: App {
+    @StateObject var allDevicesVM = AllDevicesViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(allDevicesVM)
         }
     }
 }

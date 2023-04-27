@@ -12,6 +12,8 @@
 		27AE8E1C29FA2A9700EFC676 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 27AE8E1B29FA2A9700EFC676 /* schema.json */; };
 		27AE8E1E29FA2B1800EFC676 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E1D29FA2B1800EFC676 /* API.swift */; };
 		27AE8E2029FA2BEC00EFC676 /* LatestSensorData.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27AE8E1F29FA2BEC00EFC676 /* LatestSensorData.graphql */; };
+		27AE8E2229FA430A00EFC676 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2129FA430A00EFC676 /* Network.swift */; };
+		27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */; };
 		27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */; };
 		27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AC29EF2B180059B974 /* ContentView.swift */; };
 		27FFC4AF29EF2B180059B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FFC4AE29EF2B180059B974 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		27AE8E1B29FA2A9700EFC676 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		27AE8E1D29FA2B1800EFC676 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		27AE8E1F29FA2BEC00EFC676 /* LatestSensorData.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LatestSensorData.graphql; sourceTree = "<group>"; };
+		27AE8E2129FA430A00EFC676 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDevicesViewModel.swift; sourceTree = "<group>"; };
 		27FFC4A729EF2B180059B974 /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityApp.swift; sourceTree = "<group>"; };
 		27FFC4AC29EF2B180059B974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +109,17 @@
 				27AE8E1B29FA2A9700EFC676 /* schema.json */,
 				27AE8E1829FA293500EFC676 /* AllDevices.graphql */,
 				27AE8E1F29FA2BEC00EFC676 /* LatestSensorData.graphql */,
+				27AE8E2129FA430A00EFC676 /* Network.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		27AE8E2329FA440E00EFC676 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		27FFC49E29EF2B180059B974 = {
@@ -170,6 +183,7 @@
 		27FFC4D429EF2D620059B974 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27AE8E2329FA440E00EFC676 /* ViewModels */,
 				27FFC4D829EF2DB50059B974 /* Components */,
 				27FFC4D729EF2D820059B974 /* Main */,
 			);
@@ -358,6 +372,8 @@
 			files = (
 				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
+				27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */,
+				27AE8E2229FA430A00EFC676 /* Network.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
