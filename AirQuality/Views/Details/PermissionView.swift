@@ -7,9 +7,9 @@
 
 import SwiftUI
 
+// MARK: Views to ask user's permisson for location
 struct PermissionView: View {
     @StateObject var locationViewModel = LocationViewModel()
-    @ObservedObject var allDeviceVM = AllDevicesViewModel()
     
     var body: some View {
         //Display view depends on the authorizationStatus
@@ -20,7 +20,8 @@ struct PermissionView: View {
                 // When the use refused, user can process to the app with limited view
                 // When the use allowed, go to NavigationTabView
                 case .authorizedWhenInUse, .authorizedAlways, .denied, .restricted:
-                    TabBar(devices: allDeviceVM.allDevices)
+                    DeviceOptionView()
+//                    TabBar(devices: allDeviceVM.allDevices)
                 default:
                     Text("Default")
                 }
@@ -64,9 +65,3 @@ struct RequestLocationView: View {
         .navigationBarBackButtonHidden(true)
     }
 }
-
-//struct PermissionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PermissionView()
-//    }
-//}

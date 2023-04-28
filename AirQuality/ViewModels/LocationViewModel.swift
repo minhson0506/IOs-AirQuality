@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
+
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
     @Published var userLocation: CLLocation?

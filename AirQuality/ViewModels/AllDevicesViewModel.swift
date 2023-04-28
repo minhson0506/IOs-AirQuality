@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//MARK: ViewModel to handle the fetch all devices from api
 class AllDevicesViewModel: ObservableObject {
     @Published var allDevices: [AllDevices.Device] = []
     

@@ -8,27 +8,35 @@
 import SwiftUI
 
 
+// View for TabView contains navigation bar for tha app
 
 struct TabBar: View {
+    @State private var tabSelection = 1
+
     @State var devices: [AllDevices.Device]
+    @Binding var device: AllDevices.Device?
     
     var body: some View {
-        TabView {
-            HomeView(devices: devices, latestSensorDataVM: LatestSensorDataViewModel())
+        TabView(selection: $tabSelection) {
+            HomeView(devices: devices,selectedDevice: $device)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+                .tag(1)
             
             ChartView()
                 .tabItem {
                     Label("Chart", systemImage: "chart.bar.fill")
                 }
+                .tag(2)
             
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
+                .tag(3)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -8,12 +8,10 @@
 import Foundation
 import Apollo
 
+// MARK: ViewModel to fetch latest sensor data of a particular device based on device name
 class LatestSensorDataViewModel: ObservableObject {
     @Published var sensorData: [LatestSensorData.SensorData] = []
     
-//    init(for deviceName: String) {
-//        fetchLatestSensorData(for: deviceName)
-//    }
     
     func fetchLatestSensorData(for deviceName: String) {
         Network.shared.apollo.fetch(query: LatestSensorDataQuery(deviceName: deviceName)) { result in
