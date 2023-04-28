@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
+		275503C329FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
+		275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
+		27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */; };
+		27A7603829FB306A0018E4E7 /* LatestSensorDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */; };
 		27AE8E1429FA277F00EFC676 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 27AE8E1329FA277F00EFC676 /* Apollo */; };
 		27AE8E1929FA293500EFC676 /* AllDevices.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27AE8E1829FA293500EFC676 /* AllDevices.graphql */; };
 		27AE8E1C29FA2A9700EFC676 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 27AE8E1B29FA2A9700EFC676 /* schema.json */; };
@@ -15,6 +20,15 @@
 		27AE8E2229FA430A00EFC676 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2129FA430A00EFC676 /* Network.swift */; };
 		27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */; };
 		27AE8E2829FA470200EFC676 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2729FA470200EFC676 /* DeviceModel.swift */; };
+		27AE8E2B29FA653200EFC676 /* DeviceOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */; };
+		27AE8E2C29FA653200EFC676 /* DeviceOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */; };
+		27AE8E2D29FA653200EFC676 /* DeviceOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */; };
+		27AE8E3029FA9EB300EFC676 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */; };
+		27AE8E3129FA9EB300EFC676 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */; };
+		27AE8E3229FA9EB300EFC676 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */; };
+		27AE8E3429FAD29E00EFC676 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */; };
+		27AE8E3529FAD29E00EFC676 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */; };
+		27AE8E3629FAD29E00EFC676 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */; };
 		27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */; };
 		27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FFC4AC29EF2B180059B974 /* ContentView.swift */; };
 		27FFC4AF29EF2B180059B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FFC4AE29EF2B180059B974 /* Assets.xcassets */; };
@@ -54,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataGridView.swift; sourceTree = "<group>"; };
+		27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorData.swift; sourceTree = "<group>"; };
+		27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataViewModel.swift; sourceTree = "<group>"; };
 		27AE8E1829FA293500EFC676 /* AllDevices.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllDevices.graphql; sourceTree = "<group>"; };
 		27AE8E1B29FA2A9700EFC676 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		27AE8E1D29FA2B1800EFC676 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -61,6 +78,9 @@
 		27AE8E2129FA430A00EFC676 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDevicesViewModel.swift; sourceTree = "<group>"; };
 		27AE8E2729FA470200EFC676 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOptionView.swift; sourceTree = "<group>"; };
+		27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		27FFC4A729EF2B180059B974 /* AirQuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FFC4AA29EF2B180059B974 /* AirQualityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityApp.swift; sourceTree = "<group>"; };
 		27FFC4AC29EF2B180059B974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				27AE8E2429FA443A00EFC676 /* AllDevicesViewModel.swift */,
+				27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */,
+				27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -128,8 +150,26 @@
 			isa = PBXGroup;
 			children = (
 				27AE8E2729FA470200EFC676 /* DeviceModel.swift */,
+				27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		27AE8E2929FA651900EFC676 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */,
+				275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27AE8E2E29FA9E9600EFC676 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		27FFC49E29EF2B180059B974 = {
@@ -195,7 +235,8 @@
 		27FFC4D429EF2D620059B974 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27FFC4D829EF2DB50059B974 /* Components */,
+				27AE8E2E29FA9E9600EFC676 /* Details */,
+				27AE8E2929FA651900EFC676 /* Components */,
 				27FFC4D729EF2D820059B974 /* Main */,
 			);
 			path = Views;
@@ -211,13 +252,6 @@
 				27FFC4E129EF2E100059B974 /* SettingsView.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		27FFC4D829EF2DB50059B974 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,10 +418,16 @@
 				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */,
+				27AE8E3029FA9EB300EFC676 /* PermissionView.swift in Sources */,
+				27A7603829FB306A0018E4E7 /* LatestSensorDataViewModel.swift in Sources */,
 				27AE8E2229FA430A00EFC676 /* Network.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
+				27AE8E2B29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
+				27AE8E3429FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
+				275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
+				27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */,
 				27AE8E2829FA470200EFC676 /* DeviceModel.swift in Sources */,
 				27FFC4DE29EF2E010059B974 /* ChartView.swift in Sources */,
 				27AE8E1E29FA2B1800EFC676 /* API.swift in Sources */,
@@ -399,10 +439,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */,
+				27AE8E2C29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */,
+				27AE8E3129FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */,
+				275503C329FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
+				27AE8E3529FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,11 +454,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AE8E2D29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
+				27AE8E3229FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				27FFC4C629EF2B180059B974 /* AirQualityUITests.swift in Sources */,
+				275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
 				27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */,
+				27AE8E3629FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 				27FFC4E029EF2E010059B974 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,10 +608,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AirQuality/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "AirQuality require location to provide info about your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AirQuality require location to provide info about your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,10 +639,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AirQuality/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "AirQuality require location to provide info about your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "AirQuality require location to provide info about your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

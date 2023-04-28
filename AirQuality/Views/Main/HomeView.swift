@@ -8,22 +8,55 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var allDevicesVM: AllDevicesViewModel
+    var devices: [AllDevices.Device]
+    @State private var selectedDevice: AllDevices.Device?
+    @ObservedObject var latestSensorDataVM : LatestSensorDataViewModel
+    
     var body: some View {
         NavigationView {
-            ScrollView {
-                ForEach(allDevicesVM.allDevices.indices, id: \.self){ index in
-                    Text(allDevicesVM.allDevices[index].deviceName)
+            VStack {
+                
+                if !latestSensorDataVM.sensorData.isEmpty {
+                    LatestSensorDataGridView(latestSensorData: latestSensorDataVM.sensorData)
+                        .padding()
+                } else {
+                    Text("Loading...")
+                        .padding()
+                }
+                
+                Divider()
+                
+                if devices.isEmpty {
+                    Text("Loading...")
+                } else {
+                    Menu {
+                        ForEach(devices, id: \.self) { device in
+                            Button(device.deviceName) {
+                                selectedDevice = device
+                                latestSensorDataVM.fetchLatestSensorData(for: device.deviceName)
+                            }
+                        }
+                    } label: {
+                        Label(selectedDevice?.deviceName ?? "Select Device", systemImage: "rectangle.expand.vertical")
+                            .foregroundColor(.primary)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.secondary.opacity(0.2))
+                            .cornerRadius(10)
+                    }
+                    .padding()
                 }
             }
+            .navigationTitle("Home")
         }
-        .navigationViewStyle(.stack)
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-            .environmentObject(AllDevicesViewModel())
-    }
-}
+
+
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//            .environmentObject(AllDevicesViewModel())
+//    }
+//}

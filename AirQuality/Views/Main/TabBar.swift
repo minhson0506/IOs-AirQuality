@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
+
 struct TabBar: View {
+    @State var devices: [AllDevices.Device]
+    
     var body: some View {
         TabView {
-            HomeView()
+            HomeView(devices: devices, latestSensorDataVM: LatestSensorDataViewModel())
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
@@ -28,8 +32,9 @@ struct TabBar: View {
     }
 }
 
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
-}
+
+//struct TabBar_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabBar()
+//    }
+//}

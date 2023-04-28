@@ -7,26 +7,6 @@
 
 import Foundation
 
-//typealias AllDevicesData = AllDevicesQuery.Data
-//
-//struct AllDevices: Decodable {
-//    var allDevices: [Device]
-//
-//    init(_ allDevices: AllDevicesData?) {
-//        self.allDevices = allDevices.self ?? []
-//    }
-//
-//    struct Device : Decodable {
-//        var deviceId: String
-//        var deviceName: String
-//
-//        init(data: AllDevicesData.AllDevice) {
-//            self.deviceId = data.deviceId
-//            self.deviceName = data.deviceName
-//        }
-//    }
-//}
-
 typealias AllDevicesData = AllDevicesQuery.Data
 
 struct AllDevices: Decodable {
@@ -36,7 +16,7 @@ struct AllDevices: Decodable {
         self.allDevices = allDevices?.allDevices?.compactMap(Device.init) ?? []
     }
     
-    struct Device : Decodable {
+    struct Device : Decodable, Hashable {
         var deviceId: String
         var deviceName: String
         
@@ -45,6 +25,15 @@ struct AllDevices: Decodable {
             self.deviceId = data.deviceId
             self.deviceName = data.deviceName
         }
+        
+        static func == (lhs: Device, rhs: Device) -> Bool {
+                return lhs.deviceId == rhs.deviceId
+            }
+            
+            func hash(into hasher: inout Hasher) {
+                hasher.combine(deviceId)
+            }
     }
 }
+
 
