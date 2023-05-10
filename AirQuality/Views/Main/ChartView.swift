@@ -8,18 +8,31 @@
 import SwiftUI
 
 struct ChartView: View {
+    @State private var selectedDate: Date = Date()
+    
     var body: some View {
         NavigationView {
-            Text("Chart")
-                .navigationTitle("Chart")
+            VStack {
+                CalendarView(selectedDate: $selectedDate)
+                Text("Selected Date: \(formattedSelectedDate)")
+            }
         }
         .navigationViewStyle(.stack)
-
     }
+    
+    private var formattedSelectedDate: String {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            return formatter.string(from: selectedDate)
+        }
 }
 
-struct ChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChartView()
-    }
-}
+
+
+
+
+
+
+
+
+
