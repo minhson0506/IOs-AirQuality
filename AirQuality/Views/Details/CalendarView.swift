@@ -15,8 +15,9 @@ struct CalendarView: View {
     
     var body: some View {
         VStack {
-            Text("Current Week")
+            Text("\(monthString(from: startOfWeek())) \(yearString(from: startOfWeek()))")
                 .font(.title)
+                        
             
             HStack {
                 Button(action: {
@@ -64,6 +65,18 @@ struct CalendarView: View {
     
     private func isCurrentDate(_ date: Date) -> Bool {
         return calendar.isDate(date, inSameDayAs: Date())
+    }
+    
+    private func monthString(from date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM"
+        return formatter.string(from: date)
+    }
+
+    private func yearString(from date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy"
+        return formatter.string(from: date)
     }
 }
 
