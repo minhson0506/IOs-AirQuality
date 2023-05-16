@@ -1,5 +1,5 @@
 //
-//  SensorDataInDate.swift
+//  SensorData.swift
 //  AirQuality
 //
 //  Created by Chi Nguyen on 16.5.2023.

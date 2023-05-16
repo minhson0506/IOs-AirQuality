@@ -1,66 +1,16 @@
-
-query AltDataInDate($deviceName: String!, $date: String!) {
+query SensorDataInDate($deviceName: String!, $date: String!) {
   sensorDataInDate(deviceName: $deviceName, date: $date) {
     alt
-  }
-}
-
-query Co2DataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     co2
-  }
-}
-
-query HumDataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     hum
-  }
-}
-
-query LuxDataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     lux
-  }
-}
-
-query NoiseDataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     noise
-  }
-}
-
-query Pm1DataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     pm1
-  }
-}
-
-query Pm10DataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     pm10
-  }
-}
-
-query Pm25DataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     pm2_5
-  }
-}
-
-query Pm4DataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     pm4
-  }
-}
-
-query PresDataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     pres
-  }
-}
-
-query TempDataInDate($deviceName: String!, $date: String!) {
-  sensorDataInDate(deviceName: $deviceName, date: $date) {
     temp
+    time
   }
 }
