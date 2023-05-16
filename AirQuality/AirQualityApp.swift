@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct AirQualityApp: App {
     @StateObject var allDevicesVM = AllDevicesViewModel()
+    @StateObject var chartViewModel = ChartViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(allDevicesVM)
+                .environmentObject(chartViewModel)
         }
     }
 }

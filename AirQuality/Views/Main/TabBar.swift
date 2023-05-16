@@ -24,7 +24,7 @@ struct TabBar: View {
                 }
                 .tag(1)
             
-            ChartView()
+            ChartView(selectedDevice: $device)
                 .tabItem {
                     Label("Chart", systemImage: "chart.bar.fill")
                 }

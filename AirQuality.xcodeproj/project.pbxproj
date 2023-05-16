@@ -14,10 +14,14 @@
 		275503C829FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
 		275503C929FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
 		275503CA29FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
+		276EEE012A130EEE002159EE /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE002A130EEE002159EE /* SensorData.swift */; };
+		276EEE102A135B2D002159EE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 276EEE0F2A135B2D002159EE /* SwiftUICharts */; };
+		276EEE122A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
+		276EEE132A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
+		276EEE142A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
 		27A48A232A0B6C1F004456CD /* SensorDataInDate.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27A48A222A0B6C1F004456CD /* SensorDataInDate.graphql */; };
 		27A48A252A0B6C88004456CD /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A242A0B6C88004456CD /* ChartViewModel.swift */; };
 		27A48A272A0B6F34004456CD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A262A0B6F34004456CD /* CalendarView.swift */; };
-		27A48A292A0B70D7004456CD /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A282A0B70D7004456CD /* SensorDataInDate.swift */; };
 		27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */; };
 		27A7603829FB306A0018E4E7 /* LatestSensorDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */; };
 		27AE8E1429FA277F00EFC676 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 27AE8E1329FA277F00EFC676 /* Apollo */; };
@@ -79,10 +83,11 @@
 		275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataGridView.swift; sourceTree = "<group>"; };
 		275503C529FBF3AC0042A545 /* SensorDataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataDisplay.swift; sourceTree = "<group>"; };
 		275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataComponentView.swift; sourceTree = "<group>"; };
+		276EEE002A130EEE002159EE /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		276EEE112A1363B7002159EE /* SensorDataInDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataInDate.swift; sourceTree = "<group>"; };
 		27A48A222A0B6C1F004456CD /* SensorDataInDate.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SensorDataInDate.graphql; sourceTree = "<group>"; };
 		27A48A242A0B6C88004456CD /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		27A48A262A0B6F34004456CD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		27A48A282A0B70D7004456CD /* SensorDataInDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataInDate.swift; sourceTree = "<group>"; };
 		27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorData.swift; sourceTree = "<group>"; };
 		27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataViewModel.swift; sourceTree = "<group>"; };
 		27AE8E1829FA293500EFC676 /* AllDevices.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllDevices.graphql; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AE8E1429FA277F00EFC676 /* Apollo in Frameworks */,
+				276EEE102A135B2D002159EE /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +174,8 @@
 				27AE8E2729FA470200EFC676 /* DeviceModel.swift */,
 				27A7603529FB2BE60018E4E7 /* LatestSensorData.swift */,
 				275503C529FBF3AC0042A545 /* SensorDataDisplay.swift */,
-				27A48A282A0B70D7004456CD /* SensorDataInDate.swift */,
+				276EEE002A130EEE002159EE /* SensorData.swift */,
+				276EEE112A1363B7002159EE /* SensorDataInDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 			name = AirQuality;
 			packageProductDependencies = (
 				27AE8E1329FA277F00EFC676 /* Apollo */,
+				276EEE0F2A135B2D002159EE /* SwiftUICharts */,
 			);
 			productName = AirQuality;
 			productReference = 27FFC4A729EF2B180059B974 /* AirQuality.app */;
@@ -368,6 +376,7 @@
 			mainGroup = 27FFC49E29EF2B180059B974;
 			packageReferences = (
 				27AE8E1229FA277F00EFC676 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				276EEE0E2A135B2D002159EE /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 27FFC4A829EF2B180059B974 /* Products */;
 			projectDirPath = "";
@@ -443,8 +452,9 @@
 				27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */,
 				27A48A252A0B6C88004456CD /* ChartViewModel.swift in Sources */,
 				27AE8E3029FA9EB300EFC676 /* PermissionView.swift in Sources */,
+				276EEE012A130EEE002159EE /* SensorData.swift in Sources */,
 				27A7603829FB306A0018E4E7 /* LatestSensorDataViewModel.swift in Sources */,
-				27A48A292A0B70D7004456CD /* SensorDataInDate.swift in Sources */,
+				276EEE122A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27AE8E2229FA430A00EFC676 /* Network.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
@@ -466,6 +476,7 @@
 			files = (
 				27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */,
 				27AE8E2C29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
+				276EEE132A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				275503C929FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
@@ -482,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AE8E2D29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
+				276EEE142A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */,
 				275503CA29FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
 				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
@@ -801,6 +813,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		276EEE0E2A135B2D002159EE /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		27AE8E1229FA277F00EFC676 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -812,6 +832,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		276EEE0F2A135B2D002159EE /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 276EEE0E2A135B2D002159EE /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		27AE8E1329FA277F00EFC676 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27AE8E1229FA277F00EFC676 /* XCRemoteSwiftPackageReference "apollo-ios" */;
