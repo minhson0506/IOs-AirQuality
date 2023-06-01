@@ -19,6 +19,14 @@
 		276EEE122A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
 		276EEE132A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
 		276EEE142A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
+		2794D9CF2A2868FA0071F305 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A262A0B6F34004456CD /* CalendarView.swift */; };
+		2794D9D02A2868FA0071F305 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A262A0B6F34004456CD /* CalendarView.swift */; };
+		2794D9D22A286B930071F305 /* DeviceOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9D12A286B930071F305 /* DeviceOption.swift */; };
+		2794D9D32A286B930071F305 /* DeviceOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9D12A286B930071F305 /* DeviceOption.swift */; };
+		2794D9D42A286B930071F305 /* DeviceOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9D12A286B930071F305 /* DeviceOption.swift */; };
+		2794D9DE2A289B230071F305 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9DD2A289B230071F305 /* RangeSliderView.swift */; };
+		2794D9DF2A289B230071F305 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9DD2A289B230071F305 /* RangeSliderView.swift */; };
+		2794D9E02A289B230071F305 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794D9DD2A289B230071F305 /* RangeSliderView.swift */; };
 		27A48A232A0B6C1F004456CD /* SensorDataInDate.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 27A48A222A0B6C1F004456CD /* SensorDataInDate.graphql */; };
 		27A48A252A0B6C88004456CD /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A242A0B6C88004456CD /* ChartViewModel.swift */; };
 		27A48A272A0B6F34004456CD /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A48A262A0B6F34004456CD /* CalendarView.swift */; };
@@ -85,6 +93,8 @@
 		275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataComponentView.swift; sourceTree = "<group>"; };
 		276EEE002A130EEE002159EE /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		276EEE112A1363B7002159EE /* SensorDataInDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataInDate.swift; sourceTree = "<group>"; };
+		2794D9D12A286B930071F305 /* DeviceOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOption.swift; sourceTree = "<group>"; };
+		2794D9DD2A289B230071F305 /* RangeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderView.swift; sourceTree = "<group>"; };
 		27A48A222A0B6C1F004456CD /* SensorDataInDate.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SensorDataInDate.graphql; sourceTree = "<group>"; };
 		27A48A242A0B6C88004456CD /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		27A48A262A0B6F34004456CD /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -183,20 +193,15 @@
 		27AE8E2929FA651900EFC676 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */,
+				27A48A262A0B6F34004456CD /* CalendarView.swift */,
 				27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */,
 				275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */,
 				275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */,
+				2794D9D12A286B930071F305 /* DeviceOption.swift */,
+				2794D9DD2A289B230071F305 /* RangeSliderView.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		27AE8E2E29FA9E9600EFC676 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				27AE8E2F29FA9EB300EFC676 /* PermissionView.swift */,
-				27A48A262A0B6F34004456CD /* CalendarView.swift */,
-			);
-			path = Details;
 			sourceTree = "<group>";
 		};
 		27FFC49E29EF2B180059B974 = {
@@ -262,7 +267,6 @@
 		27FFC4D429EF2D620059B974 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27AE8E2E29FA9E9600EFC676 /* Details */,
 				27AE8E2929FA651900EFC676 /* Components */,
 				27FFC4D729EF2D820059B974 /* Main */,
 			);
@@ -458,8 +462,10 @@
 				27AE8E2229FA430A00EFC676 /* Network.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
+				2794D9D22A286B930071F305 /* DeviceOption.swift in Sources */,
 				27AE8E2B29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
+				2794D9DE2A289B230071F305 /* RangeSliderView.swift in Sources */,
 				27AE8E3429FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 				275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
 				27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */,
@@ -476,14 +482,17 @@
 			files = (
 				27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */,
 				27AE8E2C29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
+				2794D9CF2A2868FA0071F305 /* CalendarView.swift in Sources */,
 				276EEE132A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
+				2794D9D32A286B930071F305 /* DeviceOption.swift in Sources */,
 				275503C929FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
 				27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */,
 				27AE8E3129FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */,
 				275503C329FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
+				2794D9DF2A289B230071F305 /* RangeSliderView.swift in Sources */,
 				27AE8E3529FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,11 +507,14 @@
 				275503CA29FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
 				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27AE8E3229FA9EB300EFC676 /* PermissionView.swift in Sources */,
+				2794D9D02A2868FA0071F305 /* CalendarView.swift in Sources */,
 				27FFC4C629EF2B180059B974 /* AirQualityUITests.swift in Sources */,
 				275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
 				27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */,
+				2794D9E02A289B230071F305 /* RangeSliderView.swift in Sources */,
 				27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */,
 				27AE8E3629FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
+				2794D9D42A286B930071F305 /* DeviceOption.swift in Sources */,
 				27FFC4E029EF2E010059B974 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

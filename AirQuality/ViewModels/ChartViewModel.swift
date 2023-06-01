@@ -11,7 +11,7 @@ import Apollo
 
 class ChartViewModel: ObservableObject {
     @Published var sensorData: [SensorData] = []
-    @Published var selectedValues: [String] = [] // Values selected for display
+    @Published var selectedValues: [String] = ["pm10"] // Values selected for display
 
     func fetchSensorData(for deviceName: String, date: String) {
         Network.shared.apollo.fetch(query: SensorDataInDateQuery(deviceName: deviceName, date: date)) { (result: Result<GraphQLResult<SensorDataInDateQuery.Data>, Error>) in

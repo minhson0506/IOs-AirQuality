@@ -15,8 +15,8 @@ struct CalendarView: View {
     
     var body: some View {
         VStack {
-            Text("\(monthString(from: startOfWeek())) \(yearString(from: startOfWeek()))")
-                .font(.title)
+            Text("\(monthString(from: startOfWeek()))")
+                .font(.headline)
                         
             
             HStack {
@@ -31,11 +31,15 @@ struct CalendarView: View {
                     VStack {
                         Text(dayString(from: date))
                             .font(.headline)
+                            .foregroundColor(isCurrentDate(date) ? .white : (selectedDate.isSameDay(as: date) ? .white : .primary)) // Update text color
+
                         Text("\(calendar.component(.day, from: date))")
                             .font(.subheadline)
+                            .foregroundColor(isCurrentDate(date) ? .white : (selectedDate.isSameDay(as: date) ? .white : .primary)) // Update text color
+
                     }
-                    .foregroundColor(isCurrentDate(date) ? .red : .primary) // Highlight current date
-                    .background(selectedDate.isSameDay(as: date) ? Color.yellow : Color.clear) // Highlight background of selected date
+                    .foregroundColor(isCurrentDate(date) ? .white : .primary) // Highlight current date
+                    .background(backgroundForDate(date)) // Apply background for the date
                     .onTapGesture {
                         selectedDate = date // Update selectedDate
                     }
@@ -68,16 +72,49 @@ struct CalendarView: View {
     }
     
     private func monthString(from date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM"
-        return formatter.string(from: date)
+        let startDate = startOfWeek()
+        let endDate = calendar.date(byAdding: .day, value: 6, to: startDate)!
+        
+        let startMonth = calendar.component(.month, from: startDate)
+        let endMonth = calendar.component(.month, from: endDate)
+        
+        let startYear = calendar.component(.year, from: startDate)
+        let endYear = calendar.component(.year, from: endDate)
+        
+        let monthFormatter = DateFormatter()
+        monthFormatter.dateFormat = "MMMM"
+        
+        if startMonth != endMonth || startYear != endYear {
+            let startMonthString = monthFormatter.string(from: startDate)
+            let endMonthString = monthFormatter.string(from: endDate)
+            
+            if startYear != endYear {
+                return "\(startMonthString) \(startYear) - \(endMonthString) \(endYear)"
+            } else {
+                return "\(startMonthString) - \(endMonthString) \(startYear)"
+            }
+        } else {
+            return "\(monthFormatter.string(from: startDate)) \(startYear)"
+        }
     }
 
-    private func yearString(from date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy"
-        return formatter.string(from: date)
+
+    
+    private func backgroundForDate(_ date: Date) -> some View {
+        let isSelected = selectedDate.isSameDay(as: date)
+        let isCurrent = isCurrentDate(date)
+        
+        return Circle()
+            .frame(width: isSelected || isCurrent ? 40 : 40, height: isSelected || isCurrent ? 40 : 40)
+            .foregroundColor(isSelected||isCurrent ? .white  : .clear)
+            .overlay(
+                Circle()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(.blue)
+                    .opacity(isSelected || isCurrent ? 1 : 0)
+            )
     }
+
 }
 
 extension Date {
