@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270D64F92A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
+		270D64FA2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
+		270D64FB2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
 		275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
 		275503C329FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
 		275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
 		275503C629FBF3AC0042A545 /* SensorDataDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C529FBF3AC0042A545 /* SensorDataDisplay.swift */; };
-		275503C829FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
-		275503C929FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
-		275503CA29FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */; };
 		276EEE012A130EEE002159EE /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE002A130EEE002159EE /* SensorData.swift */; };
 		276EEE102A135B2D002159EE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 276EEE0F2A135B2D002159EE /* SwiftUICharts */; };
 		276EEE122A1363B7002159EE /* SensorDataInDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EEE112A1363B7002159EE /* SensorDataInDate.swift */; };
@@ -88,9 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraInfoView.swift; sourceTree = "<group>"; };
 		275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataGridView.swift; sourceTree = "<group>"; };
 		275503C529FBF3AC0042A545 /* SensorDataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataDisplay.swift; sourceTree = "<group>"; };
-		275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataComponentView.swift; sourceTree = "<group>"; };
 		276EEE002A130EEE002159EE /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		276EEE112A1363B7002159EE /* SensorDataInDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataInDate.swift; sourceTree = "<group>"; };
 		2794D9D12A286B930071F305 /* DeviceOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOption.swift; sourceTree = "<group>"; };
@@ -197,9 +197,9 @@
 				27A48A262A0B6F34004456CD /* CalendarView.swift */,
 				27AE8E2A29FA653200EFC676 /* DeviceOptionView.swift */,
 				275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */,
-				275503C729FBFB9A0042A545 /* SensorDataComponentView.swift */,
 				2794D9D12A286B930071F305 /* DeviceOption.swift */,
 				2794D9DD2A289B230071F305 /* RangeSliderView.swift */,
+				270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -451,7 +451,6 @@
 			files = (
 				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
 				275503C629FBF3AC0042A545 /* SensorDataDisplay.swift in Sources */,
-				275503C829FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
 				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */,
 				27A48A252A0B6C88004456CD /* ChartViewModel.swift in Sources */,
@@ -466,6 +465,7 @@
 				27AE8E2B29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				27FFC4AB29EF2B180059B974 /* AirQualityApp.swift in Sources */,
 				2794D9DE2A289B230071F305 /* RangeSliderView.swift in Sources */,
+				270D64F92A28F4AD001868B7 /* ExtraInfoView.swift in Sources */,
 				27AE8E3429FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 				275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
 				27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */,
@@ -487,7 +487,7 @@
 				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				2794D9D32A286B930071F305 /* DeviceOption.swift in Sources */,
-				275503C929FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
+				270D64FA2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */,
 				27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */,
 				27AE8E3129FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */,
@@ -504,12 +504,12 @@
 				27AE8E2D29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				276EEE142A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */,
-				275503CA29FBFB9A0042A545 /* SensorDataComponentView.swift in Sources */,
 				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27AE8E3229FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				2794D9D02A2868FA0071F305 /* CalendarView.swift in Sources */,
 				27FFC4C629EF2B180059B974 /* AirQualityUITests.swift in Sources */,
 				275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
+				270D64FB2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */,
 				27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */,
 				2794D9E02A289B230071F305 /* RangeSliderView.swift in Sources */,
 				27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */,

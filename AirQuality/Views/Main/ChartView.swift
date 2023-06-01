@@ -12,7 +12,7 @@ struct ChartView: View {
     @State private var selectedDate: Date = Date()
     @Binding var selectedDevice: AllDevices.Device?
     @EnvironmentObject var chartViewModel: ChartViewModel
-    @ObservedObject var deviceVM = AllDevicesViewModel()
+    @StateObject var deviceVM = AllDevicesViewModel() // Create an instance of AllDevicesViewModel
     @ObservedObject var latestSensorDataVM  = LatestSensorDataViewModel()
     
     private let valueOptions: [String] = ["alt", "co2", "hum", "lux", "noise", "pm1", "pm10", "pm4", "pres", "temp", "pm2_5"]
@@ -20,7 +20,10 @@ struct ChartView: View {
     
     var body: some View {
         VStack {
+            DeviceOption(deviceVM: deviceVM, selectedDevice: $selectedDevice, latestSensorDataVM: latestSensorDataVM)
+            
             CalendarView(selectedDate: $selectedDate)
+                .padding(.top, -40)
             
             if !chartViewModel.sensorData.isEmpty {
                 Menu(content: {
@@ -52,7 +55,9 @@ struct ChartView: View {
         .onChange(of: selectedDate) { _ in
             fetchSensorData()
         }
-        
+        .onChange(of: selectedDevice){ _ in
+            fetchSensorData()
+        }
     }
     
     
