@@ -14,6 +14,10 @@ struct SliderView: View {
     var body: some View {
         VStack{
             Text(name)
+                .font(.subheadline)
+            Text("Default start: \(String(format: "%.2f", slider.valueStart))  ---  End: \(String(format: "%.2f", slider.valueEnd))")
+            Text("Current values:  Low: \(String(format: "%.2f", slider.lowHandleValue))  ---  High: \(String(format: "%.2f", slider.highHandleValue))")
+
             RoundedRectangle(cornerRadius: slider.lineWidth)
                 .fill(Color.gray.opacity(0.2))
                 .frame(width: slider.width, height: slider.lineWidth)

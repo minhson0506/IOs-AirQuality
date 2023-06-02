@@ -80,11 +80,21 @@ class SliderHandle: ObservableObject {
         }
     
     private func restrictSliderBtnLocation(_ dragLocation: CGPoint) {
-        //On Slider Width
-        if dragLocation.x > CGPoint.zero.x && dragLocation.x < sliderWidth {
-            calcSliderBtnLocation(dragLocation)
+            // On Slider Width
+            if dragLocation.x > CGPoint.zero.x && dragLocation.x < sliderWidth {
+                calcSliderBtnLocation(dragLocation)
+            }
+            
+            // Limit highHandle location
+            if currentPercentage.wrappedValue >= 1.0 && dragLocation.x > currentLocation.x {
+                currentLocation.x = currentLocation.x
+            }
+            
+            // Limit lowHandle location
+            if currentPercentage.wrappedValue <= 0.0 && dragLocation.x < currentLocation.x {
+                currentLocation.x = currentLocation.x
+            }
         }
-    }
     
     private func calcSliderBtnLocation(_ dragLocation: CGPoint) {
         if dragLocation.y != sliderHeight/2 {
