@@ -21,6 +21,10 @@ struct LatestSensorDataGridView: View {
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     @State private var showExtraInfo = false
     @State private var displayInfo: String = ""
+    
+   
+            
+
 
     var body: some View {
         ScrollView {
@@ -46,6 +50,8 @@ struct LatestSensorDataGridView: View {
                                 .foregroundColor(.black)
                                 .fontWeight(.semibold)
                             
+                            Spacer()
+                            
                             Image(systemName: "info.circle.fill")
                                 .resizable()
                                 .frame(width: 20, height: 20)
@@ -54,6 +60,7 @@ struct LatestSensorDataGridView: View {
                                     showExtraInfo(with: data.name)
                                 }
                         }
+                        .frame(width: UIScreen.main.bounds.width/2 - 20, alignment: .leading)
                         
                         Text(data.value)
                             .font(.title2)
@@ -68,11 +75,13 @@ struct LatestSensorDataGridView: View {
                     .cornerRadius(10)
                 }
             }
+            .padding(.horizontal, 10)
         }
         .sheet(isPresented: $showExtraInfo) {
             ExtraInfoView(extraInfo: $displayInfo)
                
         }
+
     }
     
     func showExtraInfo(with name: String) {
@@ -102,6 +111,42 @@ struct LatestSensorDataGridView: View {
         }
         showExtraInfo = true
     }
+    
+//    func getBackgroundColor(for value: String) -> Color {
+//        let numericValue = Double(value) ?? 0.0
+//
+//        switch data.name {
+//        case "Pm10":
+//            // Retrieve the lowHandle and highHandle values from storage
+//            let pm10LowHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_lowHandle")
+//            let pm10HighHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_highHandle")
+//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
+//                print("PM10 HIGH + \(customSlider.highHandleValue)")
+//                return .red
+//            } else {
+//                return .green
+//            }
+//        case "anotherValue1":
+//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
+//                print("Another Value 1 HIGH + \(customSlider.highHandleValue)")
+//                return .red
+//            } else {
+//                return .green
+//            }
+//        case "anotherValue2":
+//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
+//                print("Another Value 2 HIGH + \(customSlider.highHandleValue)")
+//                return .red
+//            } else {
+//                return .green
+//            }
+//        // Add more cases for other possibilities
+//        default:
+//            return .green
+//        }
+//    }
+
+
 }
 
 

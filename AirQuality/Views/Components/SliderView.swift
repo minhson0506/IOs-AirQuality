@@ -32,10 +32,12 @@ struct SliderView: View {
                     }
                 )
         }
-        .onChange(of: slider.lowHandle.currentValue) { _ in
+        .onChange(of: slider.lowHandle.currentValue) { newValue in
+            print("\(name) lowHandle value changed: \(newValue)")
             saveSliderValuesToStorage()
         }
-        .onChange(of: slider.highHandle.currentValue) { _ in
+        .onChange(of: slider.highHandle.currentValue) { newValue in
+            print("\(name) highHandle value changed: \(newValue)")
             saveSliderValuesToStorage()
         }
         

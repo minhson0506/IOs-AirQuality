@@ -9,15 +9,15 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @StateObject private var pm10Slider = CustomSlider(start: 10, end: 100, name: "PM10" )
-    @StateObject private var pm1Slider = CustomSlider(start: 10, end: 100, name: "PM1" )
-    @StateObject private var pm4Slider = CustomSlider(start: 10, end: 100, name: "PM4" )
-    @StateObject private var pm25Slider = CustomSlider(start: 10, end: 100, name: "PM2.5" )
-    @StateObject private var noiseSlider = CustomSlider(start: 10, end: 100, name: "Noise" )
-    @StateObject private var lightSlider = CustomSlider(start: 10, end: 100, name: "Light" )
-    @StateObject private var tempSlider = CustomSlider(start: 10, end: 100, name: "Temperature" )
-    @StateObject private var presSlider = CustomSlider(start: 10, end: 100, name: "Pressure" )
-    @StateObject private var co2Slider = CustomSlider(start: 10, end: 100, name: "C02" )
+    @StateObject private var pm10Slider = CustomSlider(start: 0, end: 54, name: "PM10" )
+    @StateObject private var pm1Slider = CustomSlider(start: 0, end: 54, name: "PM1" )
+    @StateObject private var pm4Slider = CustomSlider(start: 0, end: 54, name: "PM4" )
+    @StateObject private var pm25Slider = CustomSlider(start: 0, end: 12, name: "PM2.5" )
+    @StateObject private var noiseSlider = CustomSlider(start: 0, end: 35, name: "Noise" )
+    @StateObject private var lightSlider = CustomSlider(start: 0, end: 300, name: "Light" )
+    @StateObject private var tempSlider = CustomSlider(start: 0, end: 30, name: "Temperature" )
+    @StateObject private var presSlider = CustomSlider(start: 0, end: 1050, name: "Pressure" )
+    @StateObject private var co2Slider = CustomSlider(start: 0, end: 5000, name: "C02" )
     
     var body: some View {
         ScrollView {
