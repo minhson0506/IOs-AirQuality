@@ -10,9 +10,12 @@
 		270D64F92A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
 		270D64FA2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
 		270D64FB2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */; };
-		270D65002A28FA26001868B7 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64FF2A28FA26001868B7 /* RangeSliderView.swift */; };
-		270D65012A28FA26001868B7 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64FF2A28FA26001868B7 /* RangeSliderView.swift */; };
-		270D65022A28FA26001868B7 /* RangeSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D64FF2A28FA26001868B7 /* RangeSliderView.swift */; };
+		270D650A2A29766E001868B7 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D65092A29766E001868B7 /* Slider.swift */; };
+		270D650B2A29766E001868B7 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D65092A29766E001868B7 /* Slider.swift */; };
+		270D650C2A29766E001868B7 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D65092A29766E001868B7 /* Slider.swift */; };
+		270D650E2A297697001868B7 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D650D2A297697001868B7 /* SliderView.swift */; };
+		270D650F2A297697001868B7 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D650D2A297697001868B7 /* SliderView.swift */; };
+		270D65102A297697001868B7 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270D650D2A297697001868B7 /* SliderView.swift */; };
 		275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
 		275503C329FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
 		275503C429FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */; };
@@ -89,7 +92,8 @@
 
 /* Begin PBXFileReference section */
 		270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraInfoView.swift; sourceTree = "<group>"; };
-		270D64FF2A28FA26001868B7 /* RangeSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderView.swift; sourceTree = "<group>"; };
+		270D65092A29766E001868B7 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		270D650D2A297697001868B7 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestSensorDataGridView.swift; sourceTree = "<group>"; };
 		275503C529FBF3AC0042A545 /* SensorDataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataDisplay.swift; sourceTree = "<group>"; };
 		276EEE002A130EEE002159EE /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				27AE8E3329FAD29E00EFC676 /* LocationViewModel.swift */,
 				27A7603729FB306A0018E4E7 /* LatestSensorDataViewModel.swift */,
 				27A48A242A0B6C88004456CD /* ChartViewModel.swift */,
+				270D65092A29766E001868B7 /* Slider.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -199,7 +204,7 @@
 				275503C129FBEC8F0042A545 /* LatestSensorDataGridView.swift */,
 				2794D9D12A286B930071F305 /* DeviceOption.swift */,
 				270D64F82A28F4AD001868B7 /* ExtraInfoView.swift */,
-				270D64FF2A28FA26001868B7 /* RangeSliderView.swift */,
+				270D650D2A297697001868B7 /* SliderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -452,7 +457,6 @@
 				27FFC4E229EF2E100059B974 /* SettingsView.swift in Sources */,
 				275503C629FBF3AC0042A545 /* SensorDataDisplay.swift in Sources */,
 				27FFC4DA29EF2DEF0059B974 /* HomeView.swift in Sources */,
-				270D65002A28FA26001868B7 /* RangeSliderView.swift in Sources */,
 				27AE8E2529FA443A00EFC676 /* AllDevicesViewModel.swift in Sources */,
 				27A48A252A0B6C88004456CD /* ChartViewModel.swift in Sources */,
 				27AE8E3029FA9EB300EFC676 /* PermissionView.swift in Sources */,
@@ -461,6 +465,7 @@
 				276EEE122A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27AE8E2229FA430A00EFC676 /* Network.swift in Sources */,
 				27FFC4AD29EF2B180059B974 /* ContentView.swift in Sources */,
+				270D650A2A29766E001868B7 /* Slider.swift in Sources */,
 				27FFC4E629EF2EC90059B974 /* TabBar.swift in Sources */,
 				2794D9D22A286B930071F305 /* DeviceOption.swift in Sources */,
 				27AE8E2B29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
@@ -469,6 +474,7 @@
 				27AE8E3429FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
 				275503C229FBEC8F0042A545 /* LatestSensorDataGridView.swift in Sources */,
 				27A7603629FB2BE60018E4E7 /* LatestSensorData.swift in Sources */,
+				270D650E2A297697001868B7 /* SliderView.swift in Sources */,
 				27AE8E2829FA470200EFC676 /* DeviceModel.swift in Sources */,
 				27FFC4DE29EF2E010059B974 /* ChartView.swift in Sources */,
 				27A48A272A0B6F34004456CD /* CalendarView.swift in Sources */,
@@ -483,12 +489,13 @@
 				27FFC4BC29EF2B180059B974 /* AirQualityTests.swift in Sources */,
 				27AE8E2C29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				2794D9CF2A2868FA0071F305 /* CalendarView.swift in Sources */,
-				270D65012A28FA26001868B7 /* RangeSliderView.swift in Sources */,
 				276EEE132A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E329EF2E100059B974 /* SettingsView.swift in Sources */,
 				27FFC4DB29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				2794D9D32A286B930071F305 /* DeviceOption.swift in Sources */,
 				270D64FA2A28F4AD001868B7 /* ExtraInfoView.swift in Sources */,
+				270D650B2A29766E001868B7 /* Slider.swift in Sources */,
+				270D650F2A297697001868B7 /* SliderView.swift in Sources */,
 				27FFC4DF29EF2E010059B974 /* ChartView.swift in Sources */,
 				27AE8E3129FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				27FFC4E729EF2EC90059B974 /* TabBar.swift in Sources */,
@@ -504,6 +511,7 @@
 				27AE8E2D29FA653200EFC676 /* DeviceOptionView.swift in Sources */,
 				276EEE142A1363B7002159EE /* SensorDataInDate.swift in Sources */,
 				27FFC4E429EF2E100059B974 /* SettingsView.swift in Sources */,
+				270D65102A297697001868B7 /* SliderView.swift in Sources */,
 				27FFC4DC29EF2DEF0059B974 /* HomeView.swift in Sources */,
 				27AE8E3229FA9EB300EFC676 /* PermissionView.swift in Sources */,
 				2794D9D02A2868FA0071F305 /* CalendarView.swift in Sources */,
@@ -513,7 +521,7 @@
 				27FFC4E829EF2EC90059B974 /* TabBar.swift in Sources */,
 				27FFC4C829EF2B180059B974 /* AirQualityUITestsLaunchTests.swift in Sources */,
 				27AE8E3629FAD29E00EFC676 /* LocationViewModel.swift in Sources */,
-				270D65022A28FA26001868B7 /* RangeSliderView.swift in Sources */,
+				270D650C2A29766E001868B7 /* Slider.swift in Sources */,
 				2794D9D42A286B930071F305 /* DeviceOption.swift in Sources */,
 				27FFC4E029EF2E010059B974 /* ChartView.swift in Sources */,
 			);
