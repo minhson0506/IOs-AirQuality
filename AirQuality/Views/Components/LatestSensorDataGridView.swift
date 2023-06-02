@@ -34,7 +34,7 @@ struct LatestSensorDataGridView: View {
                         HStack {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.green)
+                                    .foregroundColor(getBackgroundColor(for: data))
                                     .frame(width: 30, height: 30)
                                 
                                 Image(systemName: "\(data.image)")
@@ -112,40 +112,18 @@ struct LatestSensorDataGridView: View {
         showExtraInfo = true
     }
     
-//    func getBackgroundColor(for value: String) -> Color {
-//        let numericValue = Double(value) ?? 0.0
-//
-//        switch data.name {
-//        case "Pm10":
-//            // Retrieve the lowHandle and highHandle values from storage
-//            let pm10LowHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_lowHandle")
-//            let pm10HighHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_highHandle")
-//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
-//                print("PM10 HIGH + \(customSlider.highHandleValue)")
-//                return .red
-//            } else {
-//                return .green
-//            }
-//        case "anotherValue1":
-//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
-//                print("Another Value 1 HIGH + \(customSlider.highHandleValue)")
-//                return .red
-//            } else {
-//                return .green
-//            }
-//        case "anotherValue2":
-//            if numericValue > customSlider.highHandleValue || numericValue < customSlider.lowHandleValue {
-//                print("Another Value 2 HIGH + \(customSlider.highHandleValue)")
-//                return .red
-//            } else {
-//                return .green
-//            }
-//        // Add more cases for other possibilities
-//        default:
-//            return .green
-//        }
-//    }
-
+    func getBackgroundColor(for data: SensorDataDisplay) -> Color {
+        let numericValue = Double(data.value) ?? 0.0
+        let highHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_highHandle")
+        let lowHandleValue = UserDefaults.standard.double(forKey: "\(data.name)_lowHandle")
+        if (numericValue > highHandleValue || numericValue < lowHandleValue) {
+            print("FOR \(data.name) HIGH VALUE: \(highHandleValue) AND LOW VALUE: \(lowHandleValue)")
+            print("FOR \(data.name) \(numericValue)")
+                return .red
+            } else {
+                return .green
+            }
+    }
 
 }
 
