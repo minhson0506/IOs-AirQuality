@@ -13,10 +13,8 @@ struct SliderView: View {
     
     var body: some View {
         VStack{
-            Text(name)
+            Text("\(name) - Start: \(String(format: "%.2f", slider.valueStart)) --- End: \(String(format: "%.2f", slider.valueEnd))")
                 .font(.subheadline)
-            Text("Default start: \(String(format: "%.2f", slider.valueStart))  ---  End: \(String(format: "%.2f", slider.valueEnd))")
-            Text("Current values:  Low: \(String(format: "%.2f", slider.lowHandleValue))  ---  High: \(String(format: "%.2f", slider.highHandleValue))")
 
             RoundedRectangle(cornerRadius: slider.lineWidth)
                 .fill(Color.gray.opacity(0.2))
@@ -36,6 +34,7 @@ struct SliderView: View {
                     }
                 )
         }
+        .padding()
         .onChange(of: slider.lowHandle.currentValue) { newValue in
             print("\(name) lowHandle value changed: \(newValue)")
             saveSliderValuesToStorage()
@@ -70,6 +69,11 @@ struct SliderHandleView: View {
             .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 0)
             .scaleEffect(handle.onDrag ? 1.3 : 1)
             .contentShape(Rectangle())
+            .position(x: handle.currentLocation.x, y: handle.currentLocation.y)
+        
+        Text("\(String(format: "%.2f", handle.currentValue))")
+            .font(.system(size: 10))
+            .foregroundColor(.black)
             .position(x: handle.currentLocation.x, y: handle.currentLocation.y)
     }
 }

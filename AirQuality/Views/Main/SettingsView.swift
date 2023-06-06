@@ -24,28 +24,19 @@ struct SettingsView: View {
             VStack {
                 Text("Settings")
                     .font(.title2)
-                    .padding(.bottom, 20)
                 SliderView(slider: pm10Slider, name: "PM10")
-                    .padding(.bottom, 20)
                 SliderView(slider: pm1Slider, name: "PM1")
-                    .padding(.bottom, 20)
                 SliderView(slider: pm4Slider, name: "PM4")
-                    .padding(.bottom, 20)
                 SliderView(slider: pm25Slider, name: "PM2.5")
-                    .padding(.bottom, 20)
                 SliderView(slider: noiseSlider, name: "Noise")
-                    .padding(.bottom, 20)
                 SliderView(slider: lightSlider, name: "Light")
-                    .padding(.bottom, 20)
                 SliderView(slider: tempSlider, name: "Temperature")
-                    .padding(.bottom, 20)
                 SliderView(slider: presSlider, name: "Pressure")
-                    .padding(.bottom, 20)
                 SliderView(slider: co2Slider, name: "CO2")
-                    .padding(.bottom, 20)
             }
+            .padding()
+
         }
-        .padding()
     }
         
 }
